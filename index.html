@@ -2,6 +2,7 @@
 
 <html>
   <head>
+    <meta charset=”UTF-8″>
     <title>Luciana Fiorda - DoWhile 2021</title>
 
     <link rel="stylesheet" href="style.css" />
@@ -9,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <script>
+      
+    </script>
 
   </head>
   <body>
@@ -22,37 +27,59 @@
           <img src="images/Foto-email.png" alt="Foto pessoal"/>
         </div>
 
-        <h1>Luciana Fiorda</h1>
-        <a href="https://github.com/lucianafiorda1990" target="_blank" > 
+        <h1 id="userName">Mayk Brito</h1>
+        <a href="https://github.com/maykbrito" target="_blank" > 
           <img src="images/github 2.svg" alt="ícone github"/>
-          luuhfiorda
+          lucianafiorda1990
         </a>
 
-        <p>An instructor focused on helping people start programming for web</p>
+        <p>Estagiária de software e apaixonada por gatos</p>
 
-        <ul>
-          <li>
-            <a href="https://youtube.com/" target="blank">
+        <ul id="socialLinks">
+          <li class="youtube">
+            <a href="https://youtube.com/maykbrito" target="blank">
             <img src="images/youtube.svg" alt="ícone Youtube"/>
             </a>
           </li>
-          <li>
-            <a href="https://instagram.com/luuhfiorda" target="_blank">
+          <li class="instagram">
+            <a href="https://instagram.com/maykbrito" target="_blank">
             <img src="images/instagram.svg" alt="ícone Instagram"/>
             </a>
           </li>
-          <li>
-            <a href="https://www.facebook.com/xLuuhx/" target="_blank">
+          <li class="facebook">
+            <a href="https://www.facebook.com/maykbrito" target="_blank">
             <img src="images/facebook.svg" alt="ícone Facebook"/>
             </a>
           </li>
-          <li>
-            <a href="https://twitter.com/@xLuuuhx" target="_blank">
+          <li class="twitter">
+            <a href="https://twitter.com/maykbrito" target="_blank">
             <img src="images/twitter.svg" alt="ícone Twitter"/>
             </a>
           </li>
         </ul>
       </div>
     </main>
+    <script>
+      
+      const linksSocialMedia = {
+        github: "lucianafiorda1990",
+        youtube: "jakelinygracielly",
+        instagram: "luuhfiorda",
+        facebook: "/xLuuhx",
+        twitter: "@xLuuuhx"
+      }
+
+      function changeSocialMediaLinks(){
+          for (let li of socialLinks.children){
+            const social = (li.getAttribute('class'))
+            li.children[0].href = `https://${social}.com/${linksSocialMedia[social]}`
+
+            alert(li.children[0].href)
+          }
+      }
+
+      changeSocialMediaLinks()
+
+    </script>
   </body>
 </html>
