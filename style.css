@@ -2,7 +2,6 @@
   margin: 0;
 }
 
-
 html,
 body {
   --grey: hsl(240, 9%, 89%);
@@ -70,6 +69,15 @@ a {
 
 p{
   margin-top: 2rem;
+}
+
+.iconBox {
+  background-color: #323238;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 ul{

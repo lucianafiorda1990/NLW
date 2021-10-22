@@ -1,6 +1,6 @@
 const linksSocialMedia = {
   github: "lucianafiorda1990",
-  youtube: "jakelinygracielly",
+  linkedin: "in/luciana-van-den-eeden-fiorda-b37078192/",
   instagram: "luuhfiorda",
   facebook: "/xLuuhx",
   twitter: "@xLuuuhx"
