@@ -24,16 +24,16 @@
           <span>
             <img src="images/build.svg" alt="Selo Rocketseat" />
           </span>
-          <img src="images/Foto-email.png" alt="Foto pessoal"/>
+          <img src="https://lorempixel.com/185/185/people/" alt="Foto pessoal" id="userImage"/>
         </div>
 
         <h1 id="userName">Mayk Brito</h1>
-        <a href="https://github.com/maykbrito" target="_blank" > 
+        <a id="userLink" href="https://github.com/maykbrito" target="_blank" > 
           <img src="images/github 2.svg" alt="ícone github"/>
-          lucianafiorda1990
+          <span id="userLogin">maykbrito</span> 
         </a>
 
-        <p>Estagiária de software e apaixonada por gatos</p>
+        <p id="userBio">Texto aleatório de bio</p>
 
         <ul id="socialLinks">
           <li class="youtube">
@@ -59,27 +59,6 @@
         </ul>
       </div>
     </main>
-    <script>
-      
-      const linksSocialMedia = {
-        github: "lucianafiorda1990",
-        youtube: "jakelinygracielly",
-        instagram: "luuhfiorda",
-        facebook: "/xLuuhx",
-        twitter: "@xLuuuhx"
-      }
-
-      function changeSocialMediaLinks(){
-          for (let li of socialLinks.children){
-            const social = (li.getAttribute('class'))
-            li.children[0].href = `https://${social}.com/${linksSocialMedia[social]}`
-
-            alert(li.children[0].href)
-          }
-      }
-
-      changeSocialMediaLinks()
-
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
